@@ -1,4 +1,8 @@
 
 a{
-  color: black !important;
+  color: white !important;
+}
+
+#signup-text{
+  padding-bottom: 10px;
 }
