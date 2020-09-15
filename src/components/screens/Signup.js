@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {withRouter} from 'react-router-dom';
 import { adduser } from '../methods/UserMethods'
 
 const Signup = (props) => {
@@ -73,4 +74,4 @@ const Signup = (props) => {
     )
 
 }
-export default Signup
+export default withRouter(Signup);
