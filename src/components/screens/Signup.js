@@ -12,8 +12,8 @@ const Signup = (props) => {
     
     function validateInputs() {}
 
-    function handleSubmit(event) {
-        event.preventDefault();
+    function handleSubmit(e) {
+        e.preventDefault();
         const newUser = {
             firstname: firstname,
             lastname: lastname,
@@ -22,9 +22,10 @@ const Signup = (props) => {
             phonenumber: phonenumber,
             password: password,
         };
+        console.log(newUser ,'submit')
         adduser(newUser).then((res) => {
             props.history.push("/");
-        });
+        })
     }
 
     return (
