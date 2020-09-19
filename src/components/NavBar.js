@@ -28,7 +28,7 @@ const NavBar=()=>{
         <li><Link to="/Signup">Creat account</Link></li>
         <li><Link to="/SignIn">SignIn</Link></li>
         <li><Link to="">Contact Us</Link></li>
-        <li><Link to="">About U</Link></li>
+        <li><Link to="">About Us</Link></li>
       </ul>
     </div>
   </nav>

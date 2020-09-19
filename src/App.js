@@ -13,19 +13,19 @@ function App() {
 
     <Route exact path='/'>
     <Home/> 
-   </Route>
+    </Route>
 
-   <Route path='/SignIn'>
+    <Route path='/SignIn'>
     <SignIn/> 
-   </Route>
+    </Route>
 
-   <Route path='/Profile'>
-   <Profile/>
-   </Route>
+    <Route path='/Profile'>
+    <Profile/>
+    </Route>
 
-   <Route path='/Signup'>
+    <Route path='/Signup'>
     <Signup /> 
-   </Route>
+    </Route>
 
     </BrowserRouter>
   );

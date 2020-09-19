@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {withRouter} from 'react-router-dom';
 import { adduser } from '../methods/UserMethods'
 
 const Signup = (props) => {
@@ -11,8 +12,8 @@ const Signup = (props) => {
     
     function validateInputs() {}
 
-    function handleSubmit(event) {
-        event.preventDefault();
+    function handleSubmit(e) {
+        e.preventDefault();
         const newUser = {
             firstname: firstname,
             lastname: lastname,
@@ -21,9 +22,10 @@ const Signup = (props) => {
             phonenumber: phonenumber,
             password: password,
         };
+        console.log(newUser ,'submit')
         adduser(newUser).then((res) => {
             props.history.push("/");
-        });
+        })
     }
 
     return (
@@ -73,4 +75,4 @@ const Signup = (props) => {
     )
 
 }
-export default Signup
+export default withRouter(Signup);
